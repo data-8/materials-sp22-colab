@@ -8,8 +8,8 @@ test = {   'name': 'q2_5',
                                                '...     """Helper function for assessing correctness."""\n'
                                                '...     return hashlib.md5(str(num).encode()).hexdigest()\n'
                                                '>>> \n'
-                                               '>>> get_hash(set(np.array(q2_5).astype(int)))\n'
-                                               "'b793dd27381f7b63cada88b749c0e023'",
+                                               '>>> get_hash(set(np.array(q2_5).astype(int)))== get_hash(set(np.array(make_array(1, 3)).astype(int)))\n'
+                                               'True',
                                        'hidden': False,
                                        'locked': False}],
                       'scored': True,
