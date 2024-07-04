@@ -2,13 +2,12 @@ OK_FORMAT = True
 
 test = {   'name': 'q1_11',
     'points': [0, 0, 0, 4],
-    'suites': [   {   'cases': [   {   'code': '>>> # Incorrect labels for columns\n'
-                                               '>>> t = stats_for_year(1990)\n'
+    'suites': [   {   'cases': [   {   'code': '>>> t = stats_for_year(1990)\n'
                                                ">>> t.labels == ('geo', 'population_total', 'children_per_woman_total_fertility', 'child_mortality_under_5_per_1000_born')\n"
                                                'True',
                                        'hidden': False,
                                        'locked': False},
-                                   {'code': '>>> # Incorrect number of rows\n>>> t = stats_for_year(1990)\n>>> t.num_rows\n50', 'hidden': False, 'locked': False},
+                                   {'code': '>>> t = stats_for_year(1990)\n>>> t.num_rows\n50', 'hidden': False, 'locked': False},
                                    {   'code': ">>> print(stats_for_year(1960).sort('geo').take(np.arange(5, 50, 5)))\n"
                                                'geo  | population_total | children_per_woman_total_fertility | child_mortality_under_5_per_1000_born\n'
                                                'can  | 17847404         | 3.88                               | 32.6\n'

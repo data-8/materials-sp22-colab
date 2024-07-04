@@ -2,10 +2,9 @@ OK_FORMAT = True
 
 test = {   'name': 'q3_2_1',
     'points': [1.5, 1.5],
-    'suites': [   {   'cases': [   {   'code': '>>> # This test just checks to see if your classify function works correctly \n'
-                                               '>>> # with k=5 nearest neighbors.\n'
-                                               '>>> from collections import Counter\n'
+    'suites': [   {   'cases': [   {   'code': '>>> from collections import Counter\n'
                                                ">>> g = train_movies.column('Genre')\n"
+                                               '>>> \n'
                                                '>>> def check(r, k):\n'
                                                '...     t = test_my_features.row(r)\n'
                                                '...     return classify(t, train_my_features, g, k) == Counter(np.take(g, np.argsort(fast_distances(t, train_my_features))[:k])).most_common(1)[0][0]\n'
@@ -14,10 +13,9 @@ test = {   'name': 'q3_2_1',
                                                'True',
                                        'hidden': False,
                                        'locked': False},
-                                   {   'code': '>>> # This test just checks to see if your classify function works correctly \n'
-                                               '>>> # with k=11 nearest neighbors.\n'
-                                               '>>> from collections import Counter\n'
+                                   {   'code': '>>> from collections import Counter\n'
                                                ">>> g = train_movies.column('Genre')\n"
+                                               '>>> \n'
                                                '>>> def check(r, k):\n'
                                                '...     t = test_my_features.row(r)\n'
                                                '...     return classify(t, train_my_features, g, k) == Counter(np.take(g, np.argsort(fast_distances(t, train_my_features))[:k])).most_common(1)[0][0]\n'
